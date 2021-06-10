@@ -1,4 +1,8 @@
+#if CX_PRIVATE_SHIM
+import _CXShim
+#else
 import CXShim
+#endif
 
 public class TracingSubscription: Subscription {
     

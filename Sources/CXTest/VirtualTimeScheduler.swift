@@ -1,4 +1,8 @@
+#if CX_PRIVATE_SHIM
+import _CXShim
+#else
 import CXShim
+#endif
 import Foundation
 
 public final class VirtualTimeScheduler: Scheduler {
