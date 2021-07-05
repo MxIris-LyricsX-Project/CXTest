@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "CXTest", targets: ["CXTest"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/cx-org/CXShim", .branch("master"))
+        .package(url: "https://github.com/cx-org/CXShim", .upToNextMinor(from: "0.4.0")),
     ],
     targets: [
         .target(name: "CXTest", dependencies: ["CXShim"]),
@@ -58,10 +58,6 @@ extension ProcessInfo {
     
     var combineImplementation: CombineImplementation {
         return environment["CX_COMBINE_IMPLEMENTATION"].flatMap(CombineImplementation.init) ?? .default
-    }
-    
-    var isCI: Bool {
-        return (environment["CX_CONTINUOUS_INTEGRATION"] as NSString?)?.boolValue ?? false
     }
 }
 

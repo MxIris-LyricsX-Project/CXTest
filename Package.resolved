@@ -2,21 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "CombineX",
-        "repositoryURL": "https://github.com/cx-org/CombineX",
-        "state": {
-          "branch": "strip-cxshim",
-          "revision": "9e73adebedc8b42cc2aa91c0b79df7f948bcd770",
-          "version": null
-        }
-      },
-      {
         "package": "CXShim",
         "repositoryURL": "https://github.com/cx-org/CXShim",
         "state": {
-          "branch": "master",
-          "revision": "fcafdd902589283519d99b0c2e35407c197f3489",
-          "version": null
+          "branch": null,
+          "revision": "82fecc246c7ca9f0ac1656b8199b7956e64d68f3",
+          "version": "0.4.0"
         }
       }
     ]
