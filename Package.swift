@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "CXTest", targets: ["CXTest"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/MxIris-LyricsX-Project/CXTest", .branchItem("master")),
+        .package(url: "https://github.com/MxIris-LyricsX-Project/CXShim", .branchItem("master")),
     ],
     targets: [
         .target(name: "CXTest", dependencies: ["CXShim"]),
